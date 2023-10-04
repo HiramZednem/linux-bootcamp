@@ -1,0 +1,4 @@
+Hello
+I'm the file n2
+some example test
+new line added from output

@@ -1,0 +1,35 @@
+There exist 3 principal commands to diferrence files.
+
+###################################
+diff: -> this is hard to understand
+diff file1 file2
+
+line-file1 > action > line-file2
+
+Actions:
+a -> line added
+c -> line changed
+d -> line deleted
+
+Example of output:
+2c2
+< I'm the file n1
+---
+> I'm the file n2
+
+#################################
+sdiff:  -> I preffer this
+sdiff file1 file2
+put the boot files in the terminal
+
+| -> changed
+< -> from file1
+> -> from file2
+
+
+#################################
+vimdiff: -> The same like sdiff but with colors and vim commands and you can eddit
+wa! -> close all
+ctrl + w w -> change of page:
+
+

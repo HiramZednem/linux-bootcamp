@@ -1,0 +1,21 @@
+
+ # I/O NAME #     # Abbreviation #   # File Descriptor #
+  Standard Input    stdin                     0
+  Standard Output   stdout                    1
+  Standard Error    stderr                    2
+
+
+### Redirection ###
+> Redirects standard output to a file, overwriting existing contetn
+
+>> The sabe but appnd it
+
+< Redirects input from a file to a command
+
+# Examples #
+chrome & -> Exec commands in second plane
+ls here not-here > errors.txt 2>&1  -> send normal output to the same file of errors, so its show the output and the error
+ls here not-here 2 > errors.txt     -> it's only gonna show the error
+
+Redirect to nowhere
+> /dev/null

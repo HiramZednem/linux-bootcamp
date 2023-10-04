@@ -1,0 +1,33 @@
+### Tar Options: ###
+c -> Create a tar archive
+x -> Extract files from the archive.
+t -> Display the table of contents (list).
+v -> Be verbose
+z -> Use compression
+f file -> use this file
+
+Basic use:
+If you want to crate a tar
+tar -cf dir1 my-first-tar
+
+If you want to see what a tar have
+tar -tf my-first-tar.tar
+
+If you want to untar a tar
+tar -xf my-first-tar.tar
+
+In all the cases you can add the -v option, because this option is gonna give
+feedback about what is doing
+
+
+### Using ZIP ###
+gzip   -> compress files
+gunzip -> uncompress files
+gzcat  -> concatenates compressed files
+zcat   -> cancatenates compressed files
+
+### du -> Disk Usage ###
+This command helps to know how much space is used by a file
+du    -> estimates file usage
+du -k -> display sizes in kilobytes
+du -h -> display sizes in human readable format

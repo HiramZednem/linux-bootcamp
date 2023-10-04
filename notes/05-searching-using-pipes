@@ -1,0 +1,23 @@
+### Searching Using Pipes ###
+- How to search the contens of files
+- What pipes are and how to use them
+
+
+## Grep command
+This helps to display lines matching a pattern
+
+# example of use
+grep pattern file
+[pattern] -> the pattern is what we are wanting to search
+
+# options
+-i -> Search ignoring case
+-c -> count number of occurences in a file
+-n -> display a number of ocurrence with line numbers
+-v -> print lines that don't match
+
+## file command
+# example of use
+file file_name -> Display file type
+
+

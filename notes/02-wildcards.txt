@@ -1,0 +1,56 @@
+Importants Concepts
+  What are wildcards?
+    - A characher/string that is used to match files/directorys
+    - They are used to match this files/dir with what we want
+    - We cand use wildcards with all the commands that need to
+      specify a path or a file, and it helps to find the files/dir
+      in a easier way
+
+    It could be used with 2 special character
+    ### ---  *  --- ###
+    matches zero or more
+    
+    *.txt
+    a*
+    a*.txt
+
+    ### ---  ?  --- ###
+    matches exactly one
+
+    ###---  [ ]  ---###
+    Character Class
+    to find character included between brackets
+    
+    ca[nt]* -> In this case is gonna shearch 'n' or 't'
+               after 'ca' and that ends in whatever *
+    Possibles matchs:
+    - can
+    - cat
+    - candy
+    - catch
+
+    
+
+    ### ---  !  --- ###
+    Exclude group of characters
+
+    [!aeuio]* -> works to find all the filest that not
+                 starts with a vowel
+     - baseball
+     - cricket
+     
+    ### Ranges ###
+    matches exactly what is writted in the range like
+    
+    [a-g]*
+    [3-6]*
+
+    ### How to skip a Wildcard character ###
+    \ - used to skip a wildacrd character
+
+    ls *\?
+      - done?
+
+
+
+
