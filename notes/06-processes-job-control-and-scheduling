@@ -1,0 +1,47 @@
+# List running processes
+Command: ps -> Display process status
+Options:
+-e -> Everything, all processes
+-f -> Full format listing
+-u username -> Display username's processes
+-p pid -> Display information for PID
+
+Common PS convination:
+ps -e -> Display all processes
+ps -ef -> Display all processes, full
+ps -eH -> Display all processes tree
+ps -e --forest -> Display all processes tree
+ps -u username -> Display all user's processes
+
+Alternative Commands:
+pstree -> Display all processes in a tree format
+top -> Interactive process viewer
+
+# Foreground vs background processes
+Command & -> Start command in background
+ctrl-c -> kill the foregruond process
+ctrl-z -> suspend the foreground process
+
+# Launch background processes
+sleep 60
+
+Command:
+fg -> we go to the las foreground procces
+gf %[number] -> we go to the name of job terminal
+ctrl + z at a terminal that is stopped is gonna stop the procces
+bg %[number] -> is gonna bring back the job number that you stopped
+jobs -> see every processes that are running in the system
+
+# Kill processes
+kill + PID(of the job)
+
+
+### SCHEDULING REPEATED JOBS WITH CRON:
+We are gonna cover what is Cron Service, crontab format and crontab command
+
+
+To repeat task in schedule we can use the cron service (for example, if we want to run a scrip when we start the computer, we can schedule that processes.
+We can use the cron command to schedule and automate tasks
+ - Cron - A time based job scheduling service.
+ - crontab - A program to create, read, eptade and delete your job schedules.)
+

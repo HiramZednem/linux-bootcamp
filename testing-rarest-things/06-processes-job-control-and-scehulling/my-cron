@@ -1,0 +1,2 @@
+# Run every Mondat ay 07:00
+0 7 * * 1 /opt/sales/bin/weekly-report
