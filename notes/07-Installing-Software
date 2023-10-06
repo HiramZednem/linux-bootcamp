@@ -1,0 +1,15 @@
+### Installing software on debian based
+APT -> ADVANCED PACKAGING TOOL
+
+apt-get apt-cache were convined as a apt
+
+apt search "name pacckage"
+apt insstall package
+apt remove package -> this command dont remove configuration
+apt purge packgae
+
+apt update -> uptade local list of remote repositories
+apt upgrade -> uptade installed packages
+apt autoremove -> sometimes packages need other packgaes to work, so if we run this command we are gonna deleted all that shity packages
+
+dpgk help you with the things that you installed as .deb
