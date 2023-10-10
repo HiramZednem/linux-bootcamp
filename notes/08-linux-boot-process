@@ -1,0 +1,31 @@
+BIOS:
+- Basic Input/Output System
+- It's an operating system independent
+- His purpose his find the bootloader
+
+Boot Loaders
+Lilo -> LInux LOader
+Grub -> GRand Unified Bootloader
+The boot loader start the operating system
+Boot leaders can start the operating system with different options
+
+Initial RAM Disx
+- Temporary filesystem that is loaded in the memomry when the system boots.
+- it helps to hardware detection and load the drivers to get the system
+- When the operating system can run by itself his job is done, and the operating system continue loading from the root filesystem
+
+The /boot directory
+All this files are stored in /boot
+- contains the files required to boot linux
+- initrd
+- kernel
+- boot loader configuration
+
+What is a Syslog?
+System logs, easy right? thats only what is happening in the enviramente
+- Allows the logging to be centrally controlled
+- it categorizate messages
+so you can easy recognize what is happening
+The Syslog facilities
+We can now if the lag came from kern, user, mail, daemon, auth,syslog, lpr, with a number (0,1,2,...,23)
+And we can now the level of priority with other number
