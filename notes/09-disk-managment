@@ -1,0 +1,15 @@
+# What is a Partition:
+When a disk is divided is name as patition. these allows yo to separete data
+## Schemes
+ - 1)OS, 2)APPLICATION, 3)USER, 4)SWAP
+ - 1)OS, 2)USER HOME DIRECTORIES
+ This help because can protect the overall system. and if we assign a number of size for determinated user, we prevent
+ to that user to fill all the system with his files
+
+ The command df -h, it's gonna display all the partitions that you have created
+
+MBR:
+MBR o Master Boot Record
+GPT:
+Mount POints:
+fdisk:
