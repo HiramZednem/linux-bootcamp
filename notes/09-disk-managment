@@ -8,8 +8,18 @@ When a disk is divided is name as patition. these allows yo to separete data
 
  The command df -h, it's gonna display all the partitions that you have created
 
-MBR:
-MBR o Master Boot Record
-GPT:
-Mount POints:
-fdisk:
+## Partitions Tables
+
+### MBR:
+- Master Boot Recorder
+- MBR o Master Boot Record
+
+###GPT:
+Replacing the MBR partitiong scheme, worf UEFI that wants to replace BIOS, supports 128 partitions, these only works with newwer operating systems
+
+##Mount Points:
+A mount poins is a directory that is used to acces data on a partition, it is almos one mount poin in /
+
+##fdisk:
+This is a alternativo tool that is provided by the linux distribution
+- Other alternativos are gdis parted
