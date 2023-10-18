@@ -23,3 +23,51 @@ A mount poins is a directory that is used to acces data on a partition, it is al
 ##fdisk:
 This is a alternativo tool that is provided by the linux distribution
 - Other alternativos are gdis parted
+
+#Information that i found on internet
+Now there exist 2 types of disk hdd, and ssd, in these disk you can put the type of partition that you want to use
+MBR.
+GPT actually is the most used in the market, it handle to create until 120 partitions
+MBR only supports 4 partitions of 2tb each one
+
+#What is a File System
+In computing, a file system or filesystem is a method and data structure that the operating system uses to control how data is stored and retrieved
+
+#What is SWAP and why we need to understand what is RAM
+There are two basic types of memory in a typical computer. The first type, random access memory (RAM), is used to store data and programs while they are being actively used by the computer. Programs and data cannot be used by the computer unless they are stored in RAM. RAM is volatile memory; that is, the data stored in RAM is lost if the computer is turned off.
+
+Hard drives are magnetic media used for long-term storage of data and programs. Magnetic media is nonvolatile; the data stored on a disk remains even when power is removed from the computer. The CPU (central processing unit) cannot directly access the programs and data on the hard drive; it must be copied into RAM first, and that is where the CPU can access its programming instructions and the data to be operated on by those instructions. During the boot process, a computer copies specific operating system programs, such as the kernel and init or systemd, and data from the hard drive into RAM, where it is accessed directly by the computer’s processor, the CPU.
+
+The second type of memory in modern Linux systems is swap space.
+
+#Swap space
+The primary function of swap space is to substitute disk space for RAM memory when real RAM fills up and more space is needed.
+
+# File Systems
+Befora a partition can be used as a partitions it need a file systems, the standar for linux is EXT
+- ext2,ext3 and ext4 are the later relases
+Other file systems are:
+-ReiserFS
+-JFS
+-XFS
+-ZFS
+-Btrfs
+
+To create a filesystem, the comand is mxfs -t TYPE DEVICE
+example:
+mkfs -t ext4 /dev/sdb3
+
+# Partitions
+To mount partitions you use
+mount DEVICE MOUNT_POINT
+mount /dev/sdb3 /opt
+
+show partitions
+df -h
+
+If you do the comand mount DEVICE MOUNT_POINT, this command is not gonna work to persist between reboots
+if you want tnhis, add an enty in the /etc/fstab file
+
+To unmount you can use
+umount DEVICE_OR_MOUNT_POINT
+umount /opt
