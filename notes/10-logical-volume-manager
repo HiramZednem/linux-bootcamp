@@ -1,0 +1,15 @@
+LVM: Logical Volume Manager
+
+
+LVM introduce extra layers of abstraction between the diks or storage devices presented oto a linux system and the file systems placed on those disks or storage devices.
+
+# Why you want to use LVM
+- You can share data between disks, you can create file system taht extend across multiple storage devices.
+
+- Without LVM, you would have reformat and repartition the storage devices, with it you can expand or shrink fily systen in real time while the data is online and fully accessible.
+
+- Easy to migrate data
+
+- You can use human-readable device name, instead of /dev/sdb3/logs.... you can simplyfy named as a "games-disk"
+
+- Available to create point-in-time snapshots of your filesystems
